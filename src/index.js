@@ -5,7 +5,6 @@ import { RootCmp } from './root-cmp';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
 import './assets/styles/main.scss';
-import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
