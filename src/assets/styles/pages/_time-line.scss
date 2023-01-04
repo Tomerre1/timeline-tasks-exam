@@ -1,0 +1,35 @@
+.time-line-container {
+  text-align: center;
+
+  p {
+    color: white;
+  }
+
+  span {
+    color: black;
+  }
+
+  @media only screen and (min-width: 1170px) {
+    .vertical-timeline.vertical-timeline--two-columns
+      .vertical-timeline-element:not(:last-child)::before {
+      left: 50%;
+      top: 60px;
+      margin-left: -2px;
+    }
+    .vertical-timeline--two-columns
+      .vertical-timeline-element-content
+      .vertical-timeline-element-date {
+      width: 150px;
+    }
+  }
+
+  .vertical-timeline-element:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 18px;
+    height: calc(100%);
+    width: 4px;
+    background: rgba(42, 42, 42, 0.5);
+  }
+}
